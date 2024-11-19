@@ -1,0 +1,94 @@
+.ticket-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 240px;
+}
+
+.ticket-card p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.ticket-card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.ticket-title {
+    color: #3836369a;
+    font-weight: 400;
+    font-size: 12px;
+
+}
+
+.ticket-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    font-size: 12px;
+}
+
+.ticket-details {
+    font-weight: 540;
+    font-size: 12px;
+}
+
+.ticket-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.ticket-footer .ticket-tag-container {
+    border: 1px solid rgb(230, 228, 228);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 400;
+    color: #3836369a;
+}
+
+.ticket-footer .card-image-priority {
+    border: 1px solid rgb(230, 228, 228);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.ticket-tag-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card-image-priority {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.header-icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header-icons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .ticket-card {
+        width: 100%;
+    }
+}
